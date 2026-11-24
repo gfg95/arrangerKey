@@ -128,6 +128,7 @@
         <input type="checkbox" bind:checked={settings.latch} onchange={resetSound} />
         Tenir l'accord
       </label>
+      <a class="tools" href="./outils">Outils MIDI (moniteur, tests) →</a>
     </section>
   {/if}
 
@@ -168,12 +169,6 @@
 </div>
 
 <style>
-  :global(body) {
-    margin: 0;
-    background: #16181d;
-    color: #e8e8ea;
-    font-family: system-ui, sans-serif;
-  }
   .app {
     min-height: 100dvh;
     display: flex;
@@ -253,6 +248,11 @@
     flex-direction: column;
     gap: 4px;
     font-size: 0.8rem;
+  }
+  .tools {
+    align-self: flex-end;
+    color: #8fb4ff;
+    font-size: 0.9rem;
   }
   label.check {
     flex-direction: row;
